@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\Powerwater.Core\Crawling.Powerwater.Core.csproj" />
+  </ItemGroup>
+</Project>
