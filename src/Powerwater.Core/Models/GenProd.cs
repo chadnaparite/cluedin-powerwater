@@ -139,5 +139,6 @@ namespace CluedIn.Crawling.Powerwater.Core.Models
         public string Spare98 { get; set; }
         public string Spare99 { get; set; }
         public string Spare100 { get; set; }
+        public string FullAddress { get; set; }
     }
 }

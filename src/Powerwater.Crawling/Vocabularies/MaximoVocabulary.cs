@@ -199,9 +199,11 @@ namespace CluedIn.Crawling.Powerwater.Vocabularies
             });
 
             //TODO: If the property is already set in the clueproducer, it doesn't have to be here.
-             
+
             //TODO: Don't forget to map all possible properties into already existing CluedIn Vocabularies.
-        
+            AddMapping(PlussStaddrNumber, CluedIn.Core.Data.Vocabularies.Vocabularies.CluedInLocation.AddressStreetNumber);
+            AddMapping(PlussStaddrStreet, CluedIn.Core.Data.Vocabularies.Vocabularies.CluedInLocation.AddressNameStreet);
+            AddMapping(PlussCity, CluedIn.Core.Data.Vocabularies.Vocabularies.CluedInLocation.AddressNameStreet);
         }
         public VocabularyKey Location { get; private set; }
         public VocabularyKey Description { get; private set; }

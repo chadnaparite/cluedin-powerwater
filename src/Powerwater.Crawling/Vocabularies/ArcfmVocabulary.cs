@@ -88,9 +88,11 @@ namespace CluedIn.Crawling.Powerwater.Vocabularies
             });
 
             //TODO: If the property is already set in the clueproducer, it doesn't have to be here.
-             
+
             //TODO: Don't forget to map all possible properties into already existing CluedIn Vocabularies.
-        
+            AddMapping(StreetNumber, CluedIn.Core.Data.Vocabularies.Vocabularies.CluedInLocation.AddressStreetNumber);
+            AddMapping(StreetName, CluedIn.Core.Data.Vocabularies.Vocabularies.CluedInLocation.AddressNameStreet);
+            AddMapping(Suburb, CluedIn.Core.Data.Vocabularies.Vocabularies.CluedInLocation.AddressCity);
         }
         public VocabularyKey ObjectId { get; private set; }
         public VocabularyKey AddressCode { get; private set; }

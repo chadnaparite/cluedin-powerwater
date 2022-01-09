@@ -151,12 +151,15 @@ namespace CluedIn.Crawling.Powerwater.Vocabularies
                 Spare98 = group.Add(new VocabularyKey("Spare98", "Spare 98", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
                 Spare99 = group.Add(new VocabularyKey("Spare99", "Spare 99", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
                 Spare100 = group.Add(new VocabularyKey("Spare100", "Spare 100", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
+                FullAddress = group.Add(new VocabularyKey("FullAddress", "Full Address", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
             });
 
             //TODO: If the property is already set in the clueproducer, it doesn't have to be here.
-             
+
             //TODO: Don't forget to map all possible properties into already existing CluedIn Vocabularies.
-        
+            AddMapping(AddrHouse, CluedIn.Core.Data.Vocabularies.Vocabularies.CluedInLocation.AddressStreetNumber);
+            AddMapping(AddrStreet, CluedIn.Core.Data.Vocabularies.Vocabularies.CluedInLocation.AddressNameStreet);
+            AddMapping(AddrTownCity, CluedIn.Core.Data.Vocabularies.Vocabularies.CluedInLocation.AddressCity);
         }
         public VocabularyKey Install { get; private set; }
         public VocabularyKey Meter { get; private set; }
@@ -293,5 +296,6 @@ namespace CluedIn.Crawling.Powerwater.Vocabularies
         public VocabularyKey Spare98 { get; private set; }
         public VocabularyKey Spare99 { get; private set; }
         public VocabularyKey Spare100 { get; private set; }
+        public VocabularyKey FullAddress { get; private set; }
     }
 }

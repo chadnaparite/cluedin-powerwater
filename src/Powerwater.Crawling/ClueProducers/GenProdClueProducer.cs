@@ -205,6 +205,7 @@ namespace CluedIn.Crawling.Powerwater.ClueProducers
             data.Properties[genprodVocabulary.Spare98] = input.Spare98.PrintIfAvailable();
             data.Properties[genprodVocabulary.Spare99] = input.Spare99.PrintIfAvailable();
             data.Properties[genprodVocabulary.Spare100] = input.Spare100.PrintIfAvailable();
+            data.Properties[genprodVocabulary.FullAddress] = input.FullAddress.PrintIfAvailable();
 
             return clue;
         }
